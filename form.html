@@ -30,9 +30,6 @@ nav a{
     background-color: rgb(0, 0, 0);
     color:rgb(255, 255, 255);
 }
-form{
-    text-align:center;
-}
 *{
     background-color: rgb(0, 0, 0);
     color:white;
@@ -42,9 +39,58 @@ form .cal{
     justify-content: space-between;
    
 }
+form 
+{
+    text-align: center;
+}
+form .class  .reg-details .input-b{
+            width:calc(100% / 2 - 20px);
+            margin-bottom: 5px;
+        }
+form .class .reg-details .input-b{
+            margin:20px 0 8px 0;
+            border-color: aliceblue;
+        }
+form .class.reg-details .input-b input{
+            height:45px;
+            width:50%;
+            display: flex;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+        
+        }
+        form .reg-details .input-b input:focus,
+        form .reg-details .input-b input:valid{
+               border-color: black;
+        }
+        form .reg-details .input-b .details{
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        .gender-class .gender-head{
+            font-size: 25px;
+            font-weight: 500;
+        }
+        form .gender-class .option{
+            display:flex;
+            width:80%;
+            margin:8px 0;
+            justify-content: space-between;
+        }
+        .gender-class .option .gen{
+             height:18px;
+             width:18px;
+             background: black;
+        }
     </style>
 </head>
 <body>
+    <div.container>
     <form>
         <header>
         <h1>Exam Form</h1>
@@ -54,29 +100,58 @@ form .cal{
         <p>Fields with '*' are required to fill</p>
         <h2 class = "cll">Student Information</h2>
         <section class="cal">
-        <p>
-            Frist Name:* <input type="text" name="firstname" id="firstname" required>    Last Name: <input type="text" name="father" id="father"><br><br>
-            Father's Name:* <input type="text" name="last" id="last"required>     Mother's Name:* <input type="text" name="mother" id="mother" required><br>
-        </p>
-        <p>
-            DOB:* <input type="date" name="dob" id="dob"required>
-        </p>
-        <p>
-            Gender:<br>
-            <input type="radio" name="gender" id="gender"> Male<br>
-            <input type="radio" name="gender" id="gender"> Female<br>
-            <input type="radio" name="gender" id="gender"> Other<br>
+            <div class="reg-details" aria-required="true">
+                <div class="input-b">
+                <span class="details">Full Name:- </span>
+                <input type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="input-b">
+                    <span class="details">Father's Name:- </span>
+                    <input type="text" placeholder="Enter father's Name">
+                    </div>
+                    <div class="input-b">
+                        <span class="details">Mother's Name:- </span>
+                        <input type="text" placeholder="Enter mother's Name">
+                        </div>
+                        <div class="input-b">
+                            <span class="details">DOB:- </span>
+                            <input type="date" placeholder="Enter Your Name">
+                            </div>
+                            <div class="input-b">
+                                <span class="details">Email:- </span>
+                                <input type="email" placeholder="Enter Your email">
+                                </div>
+                                <div class="input-b">
+                                    <span class="details">Enrollment no.:- </span>
+                                    <input type="email" placeholder="Enter Your email">
+                                    </div>
+            </div>
+            <div class="gender-class">
+               
+                <span class="gender-head">...Gender...</span>
+                <div class="option">
+                    
+                        <lable for=" ">
+                            <input type="radio" name="gender"id="gender">
+                            <span class="gen"></span>
+                            <span class="gender">Male</span>
+                        </lable>
+                        <lable for=" ">
+                            <input type="radio" name="gender"id="gender">
+                            <span class="gen"></span>
+                            <span class="gender">Female</span>
+                        </lable>
+                        <lable for=" ">
+                            <input type="radio" name="gender"id="gender">
+                            <span class="gen"></span>
+                            <span class="gender">Other</span>
+                        </lable>
+                </div>
         </p>
         <p>
             address:*<textarea cols="30" rows="4" required>
              </textarea>
-         </p>
-         <p>
-             Email:* <input type="email" name="email" id="email"required>
-         </p>
-          <p>
-              Enrollmeny No.:* <input type="number" name="enroll" id="enroll"reuired>
-          </p>
+            </p>
                <p>
                    Choose center:*
                   <select name="city" id="city"required>
@@ -118,6 +193,7 @@ form .cal{
                  Email:<a href="mailto:cdaivik185@gmail.com">cdaivik185@gmail.com</a>
              </p>
     </form>
+</div.container>
     
 </body>
 </html>
