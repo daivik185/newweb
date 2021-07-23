@@ -52,53 +52,38 @@
     display:flex;
     justify-content: space-between;
 }
-.home{
-    color:beige;
-    background-color:black;
-    display: flex;
+
+.home .image 
+{
+
+  text-align: center;
 }
-.home img{
-    margin:0 10%;
-    display:flex;
-    padding:20px;
-    justify-content: center;   
-}
-.home .image img{
-    border-radius: 30px;
-    justify-content: center;
-}
-.home .text {
-   width: 50%;   
-    text-align: center;
-    text-align: justify;
-    justify-content: center;
-    padding:50px 200px;
-}
-.home .hey{
+.home .combine .text .hey{
+    position: absolute;
     font-size: 50px;
+    top:80%;
+    left:20%;
 }
-.home .size{
-    font-size: 25px;
+.home .combine .text .name{
+    position: absolute;
+    font-size: 40px;
+    top:90%;
+    left:20%;
 }
-.home .down{
-    font-size: 25px;
+.home .combine .text .resume{
+    position: absolute;
+    font-size: 30px;
+    top:100%;
+    left:20%;
 }
-.home .text a button{
-    color: white;
-    size: 1cm;
+.home .combine .text .button{
+    position: absolute;
+    font-size: 40px;
+    top:110%;
+    left:20%;
 }
-.home
-.form .examform{
-    font-size: 1.5cm;
-    text-align: center;
-    padding:5px;
+.home .combine .text .button button{
+        font-size: 40px;
+        border-radius: 10px;
 }
-.input button{
-    font-size: 1cm;
-    border-radius: 10px;
-    float:inline-start;
-    
-}
-.input{
-    text-align: center;
-}
+
