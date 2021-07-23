@@ -23,9 +23,21 @@
 } 
 .menu li a{
     padding: 10px;
+    margin:3px;
     list-style-type:none;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
+    height:40px;
+    line-height: 43px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+}
+.menu li a:hover{
+    color:#FFFFFF;
+    background-color: #7c9c97;
+    box-shadow: 5px 10px 30px rgba(59, 175, 171, 0.3);
+    transition: all ease 0.2s ;
 }
 .navbar h2{
     text-align:right;
@@ -43,9 +55,10 @@
 .home{
     color:beige;
     background-color:black;
+    display: flex;
 }
 .home img{
-    margin:0 33%;
+    margin:0 10%;
     display:flex;
     padding:20px;
     justify-content: center;   
@@ -54,13 +67,27 @@
     border-radius: 30px;
     justify-content: center;
 }
-.home .para {
+.home .text {
    width: 50%;   
-    font-size: 20px;
-    padding:30px;
-    margin: 0 300px;
     text-align: center;
+    text-align: justify;
+    justify-content: center;
+    padding:50px 200px;
 }
+.home .hey{
+    font-size: 50px;
+}
+.home .size{
+    font-size: 25px;
+}
+.home .down{
+    font-size: 25px;
+}
+.home .text a button{
+    color: white;
+    size: 1cm;
+}
+.home
 .form .examform{
     font-size: 1.5cm;
     text-align: center;
