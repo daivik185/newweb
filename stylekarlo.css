@@ -63,27 +63,37 @@
     font-size: 50px;
     top:80%;
     left:20%;
+    background-color: transparent;
+    color: black;
 }
 .home .combine .text .name{
     position: absolute;
     font-size: 40px;
     top:90%;
     left:20%;
+    color: black;
+    background-color: transparent;
 }
 .home .combine .text .resume{
     position: absolute;
     font-size: 30px;
     top:100%;
     left:20%;
+    color: black;
+    background-color: transparent;
 }
-.home .combine .text .button{
+.home .combine .text .button a{
     position: absolute;
     font-size: 40px;
     top:110%;
-    left:20%;
+    left:20%;   
+    color: black;
+    background-color: transparent;
 }
 .home .combine .text .button button{
         font-size: 40px;
         border-radius: 10px;
+        color: black;
+        background-color: transparent;
 }
 
